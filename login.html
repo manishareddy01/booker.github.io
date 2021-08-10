@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-commerce2 | Blogs </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    
+    
+</head> 
+<body>
+    <nav class="nav nav_top">
+        <div class="logo">
+            <a href="project2.html"><img src="C:\Users\MANISHA\Desktop\html\logo.jpg" width="70px"> </a>
+        </div>
+        <div class="nav_side">
+            <a href="about.html">About Us</a>
+            <a href="explore.html">Explore</a>
+            <a href="blog.html">Blogs</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login/Register</a>
+        </div>
+    </nav>
+    <div class="login">
+        <h2>Fill your details</h2>
+        <div class="login_form">
+            <form name="submit-loginsheet" method="POST">
+                <input type="text" name="Name" placeholder="Name"><br>
+                <input type="email" name="E-mail" placeholder="Email-id"><br>
+                <input type="number" name="Number" placeholder="Contact-Number"><br>
+                <input type="password" name="Password" placeholder="Password"><br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    
+    
+
+    <footer>
+        <div class="footer_logo">
+            <a href="project2.html"><img src="C:\Users\MANISHA\Desktop\html\logo.jpg" width="70px"> </a>
+        </div>
+        <div class="pages">
+             <h3>Pages</h3>
+             <a href="about.html">About Us </a>|
+             <a href="explore.html">Explore </a>|
+             <a href="blog.html">Blogs </a>|
+             <a href="login.html">Login/Register</a>
+         </div>
+        <div class="doc">
+             <h3>Docs</h3>
+             <a href="">Privacy policy </a>|
+             <a href="">Terms of Usage </a>|
+             <a href="">Refund Policy</a>
+
+         </div>
+        <div class="social">
+             <h3>
+            Follow us
+              </h3>
+             <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+             <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+             <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+             <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+             
+        </div>
+        <div class="contact">
+             <h3>Contact us</h3>
+             <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+             <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+             <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </div>
+    <hr>
+        <p>Copyright : 2021 . All rights reserved</p>
+    </footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+
+<script type="text/javascript">
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyvv8Tvqptj4Uc-5B9fi8GQ3KebLNFcDFxnm22WRc7c7jGNJuL9Dx8r1ZhItOGXwdaH4Q/exec'
+            const form = document.forms['submit-loginsheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("You are successfully registered"))
+                .catch(error => console.error('Error!', error.message))
+            })
+          
+</script>
+</body>   
+</html>
